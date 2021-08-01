@@ -12,7 +12,6 @@ header {
     flex-direction: row;
     justify-content:space-between;
     text-align: center;
-    font-size: 13px;
     padding-top: 12px;
 }
 
@@ -32,9 +31,13 @@ header div {
     padding-right: 10px;
     padding-left:10px;
 }
-a {
+header a {
     text-decoration: none;
     color: black;
+}
+#footer-elt a {
+    text-decoration: none;
+    color: rgb(112, 117, 122);
 }
 button {
     margin: 25px 5px 0px 5px;
@@ -52,6 +55,7 @@ button {
 #header-right {
     display: grid;
     grid-template-columns: auto auto auto auto;
+    font-size: 13px;
 }
 #logo{
     background-color:#fff;
@@ -123,7 +127,10 @@ footer{
     background-color: rgb(242, 242, 242);
     padding: 15px 25px 15px 25px;
 }
-a:hover {
+header a:hover {
+    text-decoration: underline;
+}
+#footer-elt a:hover {
     text-decoration: underline;
 }
 button:hover {
@@ -132,31 +139,21 @@ button:hover {
     padding: 7px 14px 7px 14px;
 }
 input {
-    height:35px;
-    border: 1px solid;
+    height:40px;
+    border: none;
     padding:0;
-    border-color:#bec3cf;
-    border-left: none;
-    border-right: none;
     width:max(30vw, 400px);
+    margin: 0 35px 0 35px;
+    font-size: 16px;
 }
 #input-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display:flex;
+    flex-wrap: nowrap;
+    border: 1px solid;
+    border-color:#bec3cf;
+    margin: auto;
+    width:min-content;
+    padding: 0;
+    border-radius: 35px;
 }
 
-#border-left {
-    height:35px;
-    border: 1px solid;
-    padding:0;
-    border-color:#bec3cf;
-    border-left:none;
-}
-#border-right {
-    height:35px;
-    border: 1px solid;
-    padding:0;
-    border-color:#bec3cf;
-    border-left:none;
-}
