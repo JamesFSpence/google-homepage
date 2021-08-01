@@ -3,11 +3,14 @@
     <head>
         <title>Google Homepage</title>
         <link rel = "stylesheet" href = "style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
             <div id = "header-left">
-                <div id = "about">About</div>
+                <div id = "about"><a href = "https://about.google/?fg=1&utm_source=google-GB&utm_medium=referral&utm_campaign=hp-header">About</a></div>
                 <div id = "store">Store</div>
             </div>
             <div id = "header-right">
@@ -22,14 +25,19 @@
                 <img src = "google-logo.png" alt = "Google Logo">
             </div>
             <form>
-                <input id = "searchbar" type="text" placeholder=""> <br>
+                <div id = "input-box">
+                    <div id = "border-left"></div>
+                    <input id = "searchbar" type="text" placeholder=""> 
+                    <div id = "border-right"></div>
+                </div>
+                <br>
                 <button id = "button-left">Google Search</button>
                 <button id = "button-right">I'm Feeling Lucky</button>
             </form>
         </div>
         <div id = "footer-elt">
             <div id ="country">United Kingdom</div>
-            <div id = "carbon"> <img src="" alt="PlantIcon"> Carbon Neutral since 2009</div>
+            <div id = "carbon"> <img src="" alt="PlantIcon"> Carbon Neutral since 2007</div>
             <footer>
                 <div id = "footer-left">
                     <div id = "advertising">Advertising</div>
