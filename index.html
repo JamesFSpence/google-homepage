@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Google Homepage</title>
+        <title>Google</title>
         <link rel = "stylesheet" href = "style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -9,6 +9,27 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
+        <div id = "account-dropdown">
+            <div>
+                <div id = "profile-picture"><img src="outline_account_circle_black_48dp.png" alt="Profile Picture"></div>
+                <div id = "name">James Spence</div>
+                <div id = "email-address">email-address@gmail.com</div>
+                <div style="padding: 0; display:flex; align-items: center; justify-content:center;"><div id = "manage-account" class = "highlight-background">Manage your Google Account</div></div>
+            </div>
+            <div id = "another-account" class = "highlight-background">
+                <div class="material-icons" style="padding: 0px 0px 0px 30px;"><span class="material-icons-outlined">
+                    person_add_alt
+                    </span>
+                </div>
+                <div style="padding: 0px 15px 0px 15px;">Add another account</div>
+            </div>
+            <div style="display:flex; justify-content:center;"><div class = "highlight-background" id = "signout">
+                Sign out
+            </div></div>
+            <div id = "bottom-dropdown">
+                    <div class = "small-padding highlight-background">Privacy Policy</div> • <div class = "small-padding highlight-background">Terms of Service</div>
+            </div>
+        </div>
         <header>
             <div id = "header-left">
                 <div id = "about"><a href = "https://about.google/?fg=1&utm_source=google-GB&utm_medium=referral&utm_campaign=hp-header">About</a></div>
@@ -20,9 +41,7 @@
                 <div id = "google-apps" class = "material-icons"><span class="material-icons-outlined">
                     apps
                     </span></div>
-                <div id = "google-account" class = "material-icons"><span class="material-icons-outlined md-48">
-                    account_circle
-                    </span></div>
+                <div id = "google-account" class = "material-icons"> <img src = "outline_account_circle_black_36dp.png" alt = "Account"></div>
             </div>
         </header>
         <div id = "main-body">
@@ -30,9 +49,9 @@
                 <img src = "google-logo.png" alt = "Google Logo">
             </div>
             <form>
-                <div id = "input-box" class = "material-icons "><span class="material-icons-outlined">
+                <div id = "input-box"><div  id = "logo-box" class = "material-icons"><span class="material-icons-outlined">
                     search
-                    </span>
+                    </span></div>
                     <input id = "searchbar" type="text" placeholder="">
                 </div>
                 <br>
@@ -42,7 +61,7 @@
         </div>
         <div id = "footer-elt">
             <div id ="country">United Kingdom</div>
-            <div id = "carbon"> <div class = "material-icons"> <span class="material-icons-outlined">
+            <div id = "carbon"> <div id = "plant-box" class = "material-icons"> <span class="material-icons-outlined">
                 grass</span></div>
                  <a href = "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwji3LaLvpDyAhU4RxUIHTwPAOIQiM8HCBA&url=https%3A%2F%2Fsustainability.google%2Fcommitments-europe%2F%3Futm_source%3Dgooglehpfooter%26utm_medium%3Dhousepromos%26utm_campaign%3Dbottom-footer%26utm_content%3D&usg=AOvVaw0dlsqADQm4jzvIdcuz-82V">Carbon Neutral since 2007</a></div>
             <footer>
